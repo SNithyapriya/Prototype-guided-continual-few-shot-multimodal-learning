@@ -1,0 +1,13 @@
+import torch
+SEED=42
+DEVICE="cuda" if torch.cuda.is_available() else "cpu"
+EMBED_DIM=256
+K_SHOTS=[1,5,10]
+LR=1e-4
+EPOCHS=30
+LAMBDA_VL=1.0
+LAMBDA_PRE=1.0
+LAMBDA_SEV=1.0
+LAMBDA_FORECAST=1.0
+LAMBDA_STABLE=0.5
+TEMPERATURE=0.07
